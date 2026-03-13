@@ -15,5 +15,5 @@ COPY . .
 EXPOSE 5000
 EXPOSE 8501
 
-# 6. Lancer l'API et l'Interface en même temps
+# On force l'utilisation du port 8501 pour Streamlit
 CMD python app.py & streamlit run interface.py --server.port 8501 --server.address 0.0.0.0
